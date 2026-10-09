@@ -1,0 +1,304 @@
+.add-product-fab {
+  position: fixed !important;
+  border: 1px solid rgb(232, 176, 57);
+  right: 24px;
+  bottom: 24px;
+
+  z-index: 1200;
+
+  min-height: 52px;
+
+  padding: 0 20px !important;
+
+  border-radius: 14px !important;
+
+  font-weight: 700 !important;
+
+  text-transform: none !important;
+
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.18) !important;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.add-product-fab:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.24) !important;
+}
+
+
+/* ==============================
+   Add Product Dialog
+================================= */
+
+.add-product-dialog .MuiDialog-paper,
+.add-product-dialog__paper {
+  width: 100%;
+
+  margin: 16px;
+
+  border-radius: 18px;
+
+  background-image: none !important;
+
+  overflow: hidden;
+
+  color: inherit;
+}
+
+
+/* ==============================
+   Dialog Header
+================================= */
+
+.add-product-dialog__title {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 22px 24px !important;
+
+  background: transparent;
+}
+
+.add-product-dialog__heading {
+  font-size: 1.25rem;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  color: inherit;
+}
+
+.add-product-dialog__subtitle {
+  margin-top: 4px;
+
+  font-size: 0.85rem;
+
+  opacity: 0.65;
+}
+
+.add-product-dialog__close {
+  min-width: 40px !important;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0 !important;
+
+  border-radius: 50% !important;
+
+  color: inherit !important;
+}
+
+
+/* ==============================
+   Dialog Content
+================================= */
+
+.add-product-dialog__content {
+  padding: 24px !important;
+  background: transparent !important;
+
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+
+/* ==============================
+   Form Scrollbar
+================================= */
+
+.add-product-dialog__content {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.5) transparent;
+}
+
+.add-product-dialog__content::-webkit-scrollbar {
+  width: 7px;
+}
+
+.add-product-dialog__content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.add-product-dialog__content::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+.add-product-dialog__content::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.75);
+}
+
+
+/* ==============================
+   Form
+================================= */
+
+.add-product-form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.add-product-form__row {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 16px;
+}
+
+
+/* ==============================
+   TextField Theme Fix
+================================= */
+
+.add-product-form .MuiInputBase-input {
+  color: inherit;
+}
+
+.add-product-form .MuiInputLabel-root {
+  color: inherit;
+  opacity: 0.65;
+}
+
+.add-product-form .MuiInputLabel-root.Mui-focused {
+  color: inherit;
+  opacity: 1;
+}
+
+.add-product-form .MuiOutlinedInput-root {
+  color: inherit;
+}
+
+.add-product-form
+  .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(128, 128, 128, 0.45);
+}
+
+.add-product-form
+  .MuiOutlinedInput-root:hover
+  .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(128, 128, 128, 0.7);
+}
+
+.add-product-form
+  .MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border-color: currentColor;
+}
+
+
+/* ==============================
+   Select
+================================= */
+
+.add-product-form .MuiSelect-select {
+  color: inherit;
+}
+
+.add-product-form .MuiSelect-icon {
+  color: inherit;
+  opacity: 0.7;
+}
+
+
+/* ==============================
+   Dialog Actions
+================================= */
+
+.add-product-dialog__actions {
+  display: flex;
+
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 16px 24px 20px !important;
+
+  background: transparent;
+}
+
+.add-product-dialog__cancel {
+  min-width: 90px;
+
+  text-transform: none !important;
+
+  font-weight: 600 !important;
+}
+
+.add-product-dialog__submit {
+  min-width: 130px;
+
+  text-transform: none !important;
+
+  font-weight: 600 !important;
+}
+
+
+/* ==============================
+   Mobile
+================================= */
+
+@media (max-width: 600px) {
+  .add-product-fab {
+    right: 16px;
+
+    bottom: 16px;
+
+    min-height: 48px;
+
+    padding: 0 16px !important;
+
+    border-radius: 12px !important;
+  }
+
+  .add-product-dialog .MuiDialog-paper {
+    margin: 8px;
+
+    border-radius: 14px;
+  }
+
+  .add-product-dialog__title {
+    padding: 18px 16px !important;
+  }
+
+ .add-product-dialog__content {
+  padding: 16px !important;
+
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+  .add-product-form {
+    gap: 14px;
+  }
+
+  .add-product-form__row {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .add-product-dialog__actions {
+    padding: 12px 16px 16px !important;
+  }
+
+  .add-product-dialog__cancel,
+  .add-product-dialog__submit {
+    flex: 1;
+  }
+}

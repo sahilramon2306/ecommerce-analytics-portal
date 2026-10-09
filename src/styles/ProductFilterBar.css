@@ -1,0 +1,68 @@
+.product-filter-bar {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 2fr)
+    minmax(180px, 1fr)
+    minmax(180px, 1fr);
+
+  gap: 16px;
+
+  padding: 20px 24px;
+
+  margin-bottom: 24px;
+}
+
+/* =========================
+   Search
+   ========================= */
+
+.product-filter-bar__search {
+  min-width: 0;
+}
+
+/* =========================
+   Category
+   ========================= */
+
+.product-filter-bar__category {
+  min-width: 0;
+}
+
+/* =========================
+   Date
+   ========================= */
+
+.product-filter-bar__date {
+  min-width: 0;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 900px) {
+  .product-filter-bar {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-filter-bar__search {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-filter-bar {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding: 16px;
+  }
+
+  .product-filter-bar__search {
+    grid-column: auto;
+  }
+}
